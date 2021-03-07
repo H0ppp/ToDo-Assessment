@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDo Assessment</string>
+    <string name="title_activity_add_task">AddTaskActivity</string>
+    <string name="prompt_task_name">Task Name</string>
+    <string name="prompt_task_description">Task Description</string>
+    <string name="fab_confirm_details">Confirm Details</string>
+    <string name="title_activity_edit_task">Edit Task</string>
+    <string name="task_complete">Task Complete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="delete_prompt">Are you sure you wish to delete this task?</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="no_tasks_yet">No Tasks Yet!</string>
+    <string name="no_tasks_prompt">Click the add button to add one!</string>
+</resources>

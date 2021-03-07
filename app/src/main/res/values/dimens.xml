@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="spacer_margin">8dp</dimen>
+    <dimen name="box_size">47dp</dimen>
+</resources>

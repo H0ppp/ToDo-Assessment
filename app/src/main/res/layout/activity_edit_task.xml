@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/double_margin"
+        android:contentDescription="@string/fab_confirm_details"
+        app:backgroundTint="@color/purple_200"
+        app:srcCompat="@drawable/ic_confirm"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/task_done_box"
+            android:layout_width="208dp"
+            android:layout_height="@dimen/box_size"
+            android:layout_marginStart="@dimen/spacer_margin"
+            android:layout_marginLeft="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/double_margin"
+            android:text="@string/task_complete"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_desc_textbox" />
+
+        <EditText
+            android:id="@+id/task_name_textbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacer_margin"
+            android:layout_marginLeft="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/spacer_margin"
+            android:ems="10"
+            android:hint="@string/prompt_task_name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/task_desc_textbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacer_margin"
+            android:layout_marginLeft="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/double_margin"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/prompt_task_description"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_name_textbox"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/delete_task_button"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/delete_task"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_done_box" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
